@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Institución Educativa: Nuestra Historia y Misión</title>
+  <link rel="stylesheet" href="cole2.css">
+</head>
+<body>
+  <header>
+    <h1>Institución Educativa</h1>
+  </header>
+ <br>
+  <main>
+    <section>
+      <h2>Nuestra Historia </h2>
+      <!-- Agrega aquí el contenido de la historia -->
+<br>       
+
+<p>
+Colegio Nacional de Tacuara nació de un sueño compartido por un grupo de visionarios que creyeron en el poder transformador de la educación. <strong>En 1982, estos educadores, Prof. Delia Godoy de Candia, Prof.  Mario Franco, Sr. Arnaldo Sofía, Ing. Ricardo Lezcano, Profe. Ladislaa León, Ing. Ruiz Díaz, Prof. Optaciano Rubén Martínez</strong> entre otros, unieron sus talentos y pasiones para fundar una institución educativa donde cada estudiante pudiera descubrir su potencial y construir un futuro brillante.
+</p>
+<br>
+<p>
+En un rincón especial de nuestro país, donde los sueños crecen tan altos como los árboles, surgió la idea de crear un espacio donde el aprendizaje fuera una aventura y la curiosidad, una llama inextinguible. Con escasos recursos pero con un corazón lleno de esperanza, nuestros fundadores comenzaron a construir un lugar donde los jóvenes pudieran explorar el mundo y encontrar su lugar en él.
+</p>
+
+<p>Valores que nos guían</p>
+<br>
+<p>
+Desde nuestros inicios, hemos cultivado valores como la solidaridad, el respeto, la perseverancia y la excelencia. Creemos que cada estudiante es único y merece oportunidades para desarrollar todas sus habilidades. Nuestro compromiso es brindar una educación de calidad que inspire a nuestros estudiantes a alcanzar sus metas más altas.
+</p>
+<p>Un futuro prometedor</p>
+<br>
+<p>
+Hoy en día, [Nombre del Colegio] es mucho más que una escuela. Somos una comunidad de aprendizaje donde los estudiantes, docentes y padres de familia trabajan juntos para construir un futuro mejor. Nuestros exalumnos son un testimonio del impacto que nuestra institución tiene en la vida de las personas.
+</p>
+<br>
+<p>
+¡Colegio Nacional de Tacuara, donde los sueños se hacen realidad!
+</p>
+<br>
+                </section>
+    <section>
+      <h3>Misión Institucional</h3>
+      <!-- Agrega aquí la misión -->
+      <p>Nuestra misión es proporcionar una educación integral que fomente el desarrollo académico, personal y social de nuestros estudiantes. Nos comprometemos a:</p> <br>
+     <ul>
+         <li>Promover valores éticos y morales: Cultivamos el respeto, la responsabilidad, la honestidad y la solidaridad en cada uno de nuestros alumnos.</li>
+    <br>
+      <li>Fomentar el pensamiento crítico y creativo: Desarrollamos habilidades que permitan a los estudiantes analizar, evaluar y crear soluciones innovadoras a los desafíos del mundo moderno.</li>
+      <br>
+      <li>Ofrecer una educación de calidad: Garantizamos una enseñanza de excelencia a través de un currículo actualizado y la utilización de tecnologías avanzadas.</li>
+      <br>
+      <li>Apoyar el desarrollo personal: Brindamos un entorno seguro y acogedor que favorece el crecimiento emocional y social de los estudiantes.</li>
+    
+     </ul>
+      </section>
+    <section>
+      <h4>Visión Institucional</h4>
+      <!-- Agrega aquí la visión -->
+      <p>Aspiramos a ser una institución educativa de referencia, reconocida por su excelencia académica y su compromiso con la formación integral de los estudiantes. Nos proponemos</p> <br>
+      <ul>
+          <li>
+             Fomentar una comunidad inclusiva y diversa: Crear un entorno donde todos los estudiantes se sientan valorados y respetados, independientemente de sus diferencias. 
+          </li><br>
+          <li>Desarrollar ciudadanos globales: Preparar a nuestros alumnos para enfrentar los desafíos del mundo contemporáneo con una mentalidad abierta y una sólida base ética.</li>
+      
+      </ul>
+    </section>
+    
+    <section>
+      <p>Servicios Educativos</p>
+      <!-- Agrega aquí los servicios -->
+    </section>
+    <section>
+      <h2>Actividades Escolares</h2>
+      <!-- Agrega aquí las actividades -->
+      <p>Nuestro colegio se enorgullece de ofrecer una variedad de actividades extracurriculares que enriquecen la experiencia educativa de nuestros estudiantes. <br>Estas actividades están diseñadas para fomentar el desarrollo integral, promover la participación activa y fortalecer el sentido de comunidad. <br> A continuación, presentamos algunas de las actividades más destacadas:</p>
+      <ul>
+          <li>Torneo de Fútbol: Competencia anual para fomentar el espíritu deportivo </li><br>
+          
+          <li>Día de la Madre: Evento especial para reconocer y agradecer a las madres</li><br>
+          
+          <li>Día del Maestro: Celebración en honor a nuestros dedicados maestros</li><br>
+          
+          <li>Día del folclore: En esta fecha se realiza danzas, comedia, etc. </li>
+         
+          <li>
+           Exhibición de Gimnastas: Presentación de habilidades gimnásticas de nuestros estudiantes.   
+          </li> <br>
+          
+          <li>Desfile por la Fundación de San Estanislao: Participación en el desfile anual de la comunidad.</li>
+      </ul>
+    </section>
+    <section>
+      <h4>Contacto y Redes Sociales</h4>
+      
+    
+    <div id="hora"></div>
+  <div id="fecha"></div>
+ 
+
+  <script>function mostrarHoraYFecha() {
+  const ahora = new Date();
+  const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+  const fechaFormateada = ahora.toLocaleDateString('es-ES', opciones); // Adapta 'es-ES' a tu localización si es necesario
+  const horaFormateada = ahora.toLocaleTimeString('es-ES');
+
+  document.getElementById('hora').textContent = horaFormateada;
+  document.getElementById('fecha').textContent = fechaFormateada;
+}
+
+// Actualizar cada segundo
+setInterval(mostrarHoraYFecha, 1000);
+</script>
+
+</body>
+</html>
